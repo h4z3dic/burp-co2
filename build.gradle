@@ -13,19 +13,19 @@ allprojects {
 }
 
 dependencies {
-    compile 'net.portswigger.burp.extender:burp-extender-api:1.7.13'
+    compile 'net.portswigger.burp.extender:burp-extender-api:2.1'
     compile project(':co2-suite')
 }
 
 project(':co2-core') {
     dependencies {
-        compile 'net.portswigger.burp.extender:burp-extender-api:1.7.13'
+        compile 'net.portswigger.burp.extender:burp-extender-api:2.1'
     }
 }
 
 project(':co2-laudanum') {
     dependencies {
-        compile 'net.portswigger.burp.extender:burp-extender-api:1.7.13'
+        compile 'net.portswigger.burp.extender:burp-extender-api:2.1'
         compile 'com.intellij:forms_rt:7.0.3'
         compile project(':co2-core')
     }
@@ -39,7 +39,7 @@ project(':co2-laudanum') {
 
 project(':co2-sqlmapper') {
     dependencies {
-        compile 'net.portswigger.burp.extender:burp-extender-api:1.7.13'
+        compile 'net.portswigger.burp.extender:burp-extender-api:2.1'
         compile 'com.intellij:forms_rt:7.0.3'
         compile project(':co2-core')
     }
@@ -53,7 +53,7 @@ project(':co2-sqlmapper') {
 
 project(':co2-cewler') {
     dependencies {
-        compile 'net.portswigger.burp.extender:burp-extender-api:1.7.13'
+        compile 'net.portswigger.burp.extender:burp-extender-api:2.1'
         compile 'com.intellij:forms_rt:7.0.3'
         compile project(':co2-core')
     }
@@ -67,7 +67,8 @@ project(':co2-cewler') {
 
 project(':co2-suite') {
     dependencies {
-        compile 'net.portswigger.burp.extender:burp-extender-api:1.7.13'
+        compile 'net.portswigger.burp.extender:burp-extender-api:2.1'
+        compile group: 'javax.xml.bind', name: 'jaxb-api', version: '2.3.0'
         compile project(':co2-core')
         compile project(':co2-laudanum')
         compile project(':co2-sqlmapper')

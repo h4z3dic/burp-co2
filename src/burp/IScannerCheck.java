@@ -5,7 +5,7 @@ package burp;
  *
  * Copyright PortSwigger Ltd. All rights reserved.
  *
- * This code may be used to extend the functionality of Burp Suite Free Edition
+ * This code may be used to extend the functionality of Burp Suite Community Edition
  * and Burp Suite Professional, provided that this usage does not violate the
  * license terms for those products.
  */
@@ -23,7 +23,7 @@ public interface IScannerCheck
 
     /**
      * The Scanner invokes this method for each base request / response that is
-     * passively scanned. <b>Note:</b> Extensions should not only analyze the
+     * passively scanned. <b>Note:</b> Extensions should only analyze the
      * HTTP messages provided during passive scanning, and should not make any
      * new HTTP requests of their own.
      *
